@@ -1,7 +1,7 @@
 """
 Pasos a realizar:
-1. Crear un bot en Telegram con botfather y obtener el TOKEN.
-2. Crear un archivo llamado variables.py y definir la variable TOKEN con el token del bot.
+1. Crear un bot en Telegram con botfather y obtener el TOKEN y el CHAT_ID.
+2. Crear un archivo llamado variables.py y definir las variables TOKEN y CHAT_ID con el token y el chat_id del bot.
 3. Enviar un mensaje al bot para que se registre el chat_id.
 4. Ejecutar el script desde la terminal con el comando: python -u (nombre_del_script).py
 5. Ingresar el mensaje que se desea enviar al bot.
