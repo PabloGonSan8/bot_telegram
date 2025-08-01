@@ -10,6 +10,9 @@ import requests
 # CONFIGURACIÓN
 # Se debe crear un archivo variales.py con el TOKEN del bot de Telegram
 from variables import TOKEN,CHAT_ID
+
+API_URL = f"https://api.telegram.org/bot{TOKEN}"
+
 # Con esta funcion se obtiene el chat_id del bot de Telegram
 """
 def get_chat_id():
@@ -22,7 +25,7 @@ def get_chat_id():
 # Lanzamos la peticion a la API de Telegram para enviar un mensaje
 # Se utilizan los parametros chat_id (obtenido anteriormente) y text (el mensaje a enviar)
 def enviar_mensaje_telegram(texto):
-    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
+    url = f"{API_URL}/sendMessage"
     params = {
         "chat_id": CHAT_ID,
         "text": texto
